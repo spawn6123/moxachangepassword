@@ -12,7 +12,7 @@ from datetime import datetime
 dayFomate = datetime.now().strftime('%Y%m%d')
 logtimeFomate = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 beErrLog = dayFomate+"-"+"beErrLog.log"
-beipErrLog = dayFomate+"-"+"iplist_log.log"
+beipErrLog = dayFomate+"-"+"iplist_error.log"
 doOkLog = dayFomate+"-"+"deOkLog.log"
 
 #等候回應時間
