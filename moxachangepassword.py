@@ -12,8 +12,8 @@ from datetime import datetime
 dayFomate = datetime.now().strftime('%Y%m%d')
 logtimeFomate = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 beErrLog = dayFomate+"-"+"beErrLog.log"
-beipErrLog = dayFomate+"-"+"beipErrLog.log"
-doOkLog = dayFomate+"-"+"doOkLog.log"
+beipErrLog = dayFomate+"-"+"iplist_log.log"
+doOkLog = dayFomate+"-"+"deOkLog.log"
 
 #等候回應時間
 stime = 2
@@ -33,8 +33,8 @@ def onlyipLog(filename,ip):
         f.write('%s\n' % (ip))
 
 # 定義密碼
-oldpassword = getpass.getpass()
-newpassword = getpass.getpass()
+oldpassword = getpass.getpass("請輸入舊密碼: ")
+newpassword = getpass.getpass("請輸入新密碼: ")
 
 #  HOST = "192.168.127.254"
 
